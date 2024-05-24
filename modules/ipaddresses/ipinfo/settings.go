@@ -2,6 +2,7 @@ package ipinfo
 
 import (
 	"fmt"
+
 	"github.com/olebedev/config"
 	"github.com/wtfutil/wtf/cfg"
 	log "github.com/wtfutil/wtf/logger"
@@ -9,7 +10,7 @@ import (
 
 const (
 	defaultFocusable                 = false
-	defaultTitle                     = "IPInfo"
+	defaultTitle                     = "本机IP信息"
 	ipV4             protocolVersion = "v4"
 	ipV6             protocolVersion = "v6"
 	auto             protocolVersion = "auto"

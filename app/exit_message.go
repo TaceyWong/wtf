@@ -10,14 +10,14 @@ import (
 )
 
 const exitMessageHeader = `
-	      ____    __    ____ .___________. _______
-	      \   \  /  \  /   / |           ||   ____|
-	       \   \/    \/   /  ----|  |-----|  |__
-	        \            /       |  |     |   __|
-	         \    /\    /        |  |     |  |
-	          \__/  \__/         |__|     |__|
+		 ███████╗██╗  ██╗ ██████╗ ██╗    ██╗███╗   ███╗███████╗
+		 ██╔════╝██║  ██║██╔═══██╗██║    ██║████╗ ████║██╔════╝
+		 ███████╗███████║██║   ██║██║ █╗ ██║██╔████╔██║█████╗  
+		 ╚════██║██╔══██║██║   ██║██║███╗██║██║╚██╔╝██║██╔══╝  
+		 ███████║██║  ██║╚██████╔╝╚███╔███╔╝██║ ╚═╝ ██║███████╗
+		 ╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═╝     ╚═╝╚══════╝
 
-    the personal information dashboard for your terminal
+			         终端个人信息仪表盘
 `
 
 // DisplayExitMessage displays the onscreen exit message when the app quits
@@ -48,7 +48,7 @@ func (wtfApp *WtfApp) displayExitMsg(exitMessageIsDisplayable bool) string {
 	}
 
 	if !wtfApp.ghUser.IsContributor && !wtfApp.ghUser.IsSponsor {
-		msgs = append(msgs, wtfApp.supportRequestMessage())
+		// msgs = append(msgs, wtfApp.supportRequestMessage())
 	}
 
 	displayMsg := strings.Join(msgs, "\n")

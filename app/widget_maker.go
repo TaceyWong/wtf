@@ -378,6 +378,7 @@ func MakeWidget(
 }
 
 // MakeWidgets creates and returns a collection of enabled widgets
+// TODO: 按需编译module，缩减可执行文件体积和启动速度
 func MakeWidgets(tviewApp *tview.Application, pages *tview.Pages, config *config.Config, redrawChan chan bool) []wtf.Wtfable {
 	var widgets []wtf.Wtfable
 
